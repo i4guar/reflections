@@ -1,0 +1,36 @@
+diff feature
+easy with specific lines
+great feature
+compare and see changes from previous versions
+mistakes are no problem
+
+pros and cons manual saving
++saving when you need to
++saving at a logical time
+-you could forget to save
+
+Google Docs documents are often seperatly changen and not depend on each other
+whereas git files are large projects where files depend on each other
+
+git log
+to see the diffrent versions
+
+git diff commit1id commit2id
+to see the differences
+
+git clone url
+clone a repository (a few files in sync)
+
+commit
+is a specific state of one file
+
+repository
+consisting out of commits of different files but at the same time
+
+git checkout id
+change HEAD
+
+HEAD
+the current commits
+
+changes can´t break the whole program because you can go to an earlier state easily
