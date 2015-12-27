@@ -1,0 +1,7 @@
+git init - creates a new repository without making the initial commit
+
+git status - views all files which has changed and the staging area
+
+git add - adds one file to the staging area
+
+staging area - there you can prepare your files to bundle them into one commit(logical change)
