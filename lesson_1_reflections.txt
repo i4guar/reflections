@@ -18,6 +18,11 @@ to see the diffrent versions
 git diff commit1id commit2id
 to see the differences
 
+git diff
+comparing working directory to staging area
+
+git diff --staged
+comparing staging area to repository
 git clone url
 clone a repository (a few files in sync)
 
@@ -31,6 +36,7 @@ git checkout id
 change HEAD
 
 HEAD
-the current commits
+the current commit
+
 
 changes can´t break the whole program because you can go to an earlier state easily
