@@ -4,4 +4,78 @@ git status - views all files which has changed and the staging area
 
 git add - adds one file to the staging area
 
-staging area - there you can prepare your files to bundle them into one commit(logical change)
+staging area - there you can prepare your files to bundle them into one commit(one logical change)
+
+
+Commit message:
+type: subject
+
+body(what and why)
+
+footer(Resolves: #123
+See also: #456, #789)
+
+Type
+feat: a new feature
+fix: a bug fix
+docs: changes to documentation
+style: formatting, missing semi colons, etc; no code change
+refactor: refactoring production code
+test: adding tests, refactoring test; no production code change
+chore: updating build tasks, package manager configs, etc; no production code change
+
+
+git reset ---hard
+discard changes in staging area and working directory
+
+git checkout master
+back to the latest commit
+
+Branch
+is used to make different change/context where you still want to keep your main branch(always working) for example for an experiment/development
+
+
+git branch
+shows you the current branches
+
+git branch [newbranchname]
+creates a new branch with that name
+
+git checkout [branchname]
+checkouts the specific branch
+
+
+git checkout -b [newbranchname]
+=	git branch [newbranchname] 
+	git checkout [newbranchname]
+
+
+git log --graph --oneline branch1 branch2
+visualizing the branches
+
+git merge master [branchname]
+merging a branch into the master branch
+
+git show [commitid]
+show the differeces between the commit and its parent
+
+git branch -d [branchname]
+deletes the label of that branchnam, used after merging
+
+
+
+Merging Conflicts
+occurs when changing the same part of the code
+<<<<<<HEAD
+[code in current commit]
+
+||||||merged common ancestor
+[code in common parents]
+
+======
+[code in merging file(master)]
+>>>>>>
+when finish submit changes 
+git add []
+git commit
+
